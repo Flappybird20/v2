@@ -2,7 +2,7 @@ var canvas = document.getElementById ("canvas")
 var ctx = canvas.getContext("2d")
 
 let gap = 220
-cons = gap + 150
+//cons = gap + 150
 
 let bX = 10
 let bY = 180
