@@ -51,6 +51,16 @@ function draw() {
                 x : canvas.width,
                 y : Math.floor(Math.random()*52)-52
             })
+            if (
+    (bX + bird.width >= pipe[i].x && bX <= pipe[i].x + top1.width) &&
+    (bY <= pipe[i].y + top1.height || bY + bird.height >= pipe[i].y + cons)
+) {
+    // Game Over logic
+    console.log("Game Over");
+    location.reload(); 
+text1.style.display = "flex"
+}
+
         }
     }
     
